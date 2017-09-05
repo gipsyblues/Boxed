@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Boxed</string>
+    <string name="main">Main</string>
+    <string name="boxes">Boxes</string>
+    <string name="close">Close</string>
+    <string name="create_move">Create Move</string>
+    <string name="start_move">Start Move</string>
+    <string name="save_move">Save Move</string>
+    <string name="cancel">Cancel</string>
+    <string name="show_boxes">Show All Boxes</string>
+    <string name="edit_move">Edit Move</string>
+    <string name="delete">Delete Move</string>
+    <string name="create_box">Create Box</string>
+    <string name="edit_box">Edit Box</string>
+    <string name="save_box">Save Box</string>
+    <string name="box_num">Box #</string>
+    <string name="add_item">Add/Edit Items</string>
+
+    <string name="title_rfid">RFID Scanning</string>
+    <string name="title_main"><u>Select A Move</u></string>
+    <string name="title_description"><u>Description</u></string>
+
+    <string name="title_starting_address"><u>Starting Address</u></string>
+    <string name="title_destination_address"><u>Destination Address</u></string>
+    <string name="hint_description">Describe the move</string>
+    <string name="hint_street">Street</string>
+    <string name="hint_city_state_zip">City, State, Zip</string>
+
+    <string-array name="LocationTypesList">
+        <item>Select Location</item>
+        <item>Attic</item>
+        <item>Basement</item>
+        <item>Bathroom</item>
+        <item>Bathroom Master</item>
+        <item>Bedroom 1</item>
+        <item>Bedroom 2</item>
+        <item>Bedroom 3</item>
+        <item>Bedroom Master</item>
+        <item>Closet Bedroom</item>
+        <item>Closet Hall</item>
+        <item>Closet Linen</item>
+        <item>Closet Living Room</item>
+        <item>Closet Office</item>
+        <item>Kitchen</item>
+        <item>Kitchen Pantry</item>
+        <item>Library</item>
+        <item>Living Room</item>
+        <item>Office</item>
+        <item>Study</item>
+    </string-array>
+
+    <string name="title_activity_maps">Map</string>
+
+    <string name="move_info_1">Move description is an alias used to separate
+        different moves.</string>
+
+    <string name="move_info_2">Example: NY to Seattle</string>
+
+    <string name="rfid_info_1">Radio-frequency identification (RFID) uses electromagnetic fields to
+        automatically identify tags attached to objects.</string>
+
+    <string name="rfid_info_2">An RFID tag can be placed on each box. This allows the app to
+    scan the tag and immediately display the contents of the box.</string>
+
+    <string name="rfid_info_3">Only certain RFID tags will work with Boxed. The tags need to
+    be passive RFID operating on 13.56 MHz.</string>
+
+    <string name="rfid_info_4">To scan an RFID tag, first make sure NFC is Enabled under the
+        device settings. Then place the back of the device close to the tag (within 4 cm). As
+        soon as the tag is read, the page with the box content will display automatically.</string>
+
+    <string name="rfid_info_5">(Some devices NFC reader is built into the battery.) </string>
+</resources>

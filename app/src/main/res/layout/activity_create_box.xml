@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cardboard"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_top"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+
+        <ImageButton
+            android:id="@+id/btn_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="14dp"
+            android:background="@mipmap/ic_action_camera"/>
+
+        <Button
+            android:id="@+id/btn_default_img"
+            android:layout_width="75dp"
+            android:layout_height="18dp"
+            android:layout_below="@+id/btn_camera"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:textColor="@color/colorDarkRed"
+            android:text="Defualt Image"
+            android:background="@drawable/note" />
+
+        <ImageView
+            android:id="@+id/image_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_default_img"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/box"/>
+
+        <CheckBox
+            android:id="@+id/chkBox_heavy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_box"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:text="Heavy"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/chkBox_fragile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chkBox_heavy"
+            android:layout_toRightOf="@+id/image_box"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Fragile"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout_top"
+        android:background="#66000000"/>
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_line"
+        android:layout_alignBaseline="@+id/tv_id"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/colorDarkRed"
+        android:inputType="number"
+        android:textSize="30dp"
+        android:hint="enter box id"
+        android:focusableInTouchMode="true" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_line"
+        android:layout_toLeftOf="@+id/et_id"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="ID:" />
+
+    <EditText
+        android:id="@+id/et_rfid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_id"
+        android:layout_alignBaseline="@+id/tv_rfid"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/colorDarkRed"
+        android:textSize="30dp"
+        android:hint="enter/scan box rfid"
+        android:focusableInTouchMode="true" />
+
+    <TextView
+        android:id="@+id/tv_rfid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_id"
+        android:layout_toLeftOf="@+id/et_rfid"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="RFID:" />
+
+    <ImageButton
+        android:id="@+id/btn_info"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_id"
+        android:layout_toRightOf="@+id/et_rfid"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/ic_action_about" />
+
+    <TextView
+        android:id="@+id/tv_locations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rfid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="Location:" />
+
+    <Spinner
+        android:id="@+id/sp_location"
+        android:layout_width="140dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tv_locations"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:entries="@array/LocationTypesList"
+        android:background="@drawable/tape"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_locations"
+        android:layout_toRightOf="@+id/sp_location"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/down_arrow"/>
+
+    <ImageView
+        android:id="@+id/image_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_locations"
+        android:layout_toRightOf="@+id/sp_location"
+        android:background="@mipmap/ic_action_error"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sp_location"
+        android:layout_marginTop="30dp"
+        android:text="save"
+        android:textStyle="bold"
+        android:background="@drawable/note"/>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="75dp"
+        android:layout_height="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_submit"
+        android:layout_marginTop="20dp"
+        android:text="@string/cancel"
+        android:textStyle="bold"
+        android:background="@drawable/note"/>
+
+</RelativeLayout>

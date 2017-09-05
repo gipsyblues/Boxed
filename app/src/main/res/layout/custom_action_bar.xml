@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <ImageView
+        android:id="@+id/box_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/box_icon"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="12dp"
+        android:background="@mipmap/ic_action_back"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_back"
+        android:layout_marginTop="9dp"
+        android:background="@mipmap/ic_action_search"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_search"
+        android:layout_marginTop="2dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@android:color/black"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/action_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:maxLines="1"/>
+
+    <ImageButton
+        android:id="@+id/btn_rfid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/rfid_icon"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/btn_flash"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/flash_off"
+        android:visibility="invisible" />
+
+</RelativeLayout>
