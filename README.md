@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="https://github.com/BrettBearden/Boxed/blob/master/Images/box_icon.png?raw=true" target="_blank"><img alt="Boxed Icon" src="https://github.com/BrettBearden/Boxed/blob/master/Images/box_icon.png?raw=true" style="max-width:100%;"></a>
+</p>
+
 About
 
 Boxed is an organizer Android app for moving. It allows creating a move to keep track of each box and the contents that are packed. An image can be captured of each box and each item. A special feature allows placing a Radio Frequency Identification tag on boxes. The RFID allows scanning the tag and a list of the box content will immediately be displayed.
