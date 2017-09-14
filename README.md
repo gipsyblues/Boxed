@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/BrettBearden/Boxed/blob/master/Images/box_icon.png?raw=true" target="_blank"><img alt="Boxed Icon" src="https://github.com/BrettBearden/Boxed/blob/master/Images/box_icon.png?raw=true" style="max-width:100%;"></a>
+  <a href="https://github.com/BrettBearden/Boxed/blob/master/Images/box_icon.png?raw=true" target="_blank"><img alt="Boxed Icon" src="https://github.com/BrettBearden/Boxed/blob/master/Images/box_icon.png?raw=true" style="max-width:10%;"></a>
 </p>
 
 About
